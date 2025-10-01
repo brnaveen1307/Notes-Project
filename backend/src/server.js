@@ -7,6 +7,13 @@ dotenv.config()
 const PORT = process.env.PORT || 5001
 
 const app = express();
+app.use(express.json()) // this middleware will parse JSON bodies: req.body
+
+// simple custom middleware
+app.use(function(req, res, next){
+    console.log(`Request Method is ${req.method} and Request URL is ${req.url}`)
+    next()
+})
 
 connectDB();
 
