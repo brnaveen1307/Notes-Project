@@ -8,7 +8,7 @@ import api from '../lib/axios.js'
 
 const NoteCard = ({note , setNotes}) => {
     
-    const hanldeDelete = async function(e, id){
+    const handleDelete = async function(e, id){
         e.preventDefault()
 
         if(!window.confirm("Are you sure you wnat to delete this note?")) return
@@ -41,7 +41,7 @@ const NoteCard = ({note , setNotes}) => {
                 </span>
                 <div className="flex items-center gap-1">
                         <PenSquareIcon className="size-4" />
-                    <button className="btn btn-ghost btn-xs text-error" onClick={function(e){hanldeDelete(e, note._id)}}>
+                    <button className="btn btn-ghost btn-xs text-error" onClick={function(e){handleDelete(e, note._id)}}>
                         <Trash2Icon className="size-4" />
                     </button>
                 </div>
