@@ -7,10 +7,27 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+/node_modules
+
+# Build outputs
 dist
 dist-ssr
 *.local
+build
+
+# Environment variables - NEVER commit these!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+.env.test
+backend/.env
+frontend/.env
 
 # Editor directories and files
 .vscode/*
@@ -18,10 +35,21 @@ dist-ssr
 .idea
 .DS_Store
 *.suo
-*.ntvs*
+.ntvs
 *.njsproj
 *.sln
 *.sw?
 
-.env
-/node_modules
+# OS generated files
+Thumbs.db
+*.swp
+*.swo
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
