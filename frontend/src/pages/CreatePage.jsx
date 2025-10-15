@@ -1,5 +1,5 @@
 import {React , useState} from 'react'
-import { Link , useNavigate } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router'
 import {ArrowLeftIcon} from 'lucide-react'
 import toast from 'react-hot-toast'
 import api from '../lib/axios.js'
