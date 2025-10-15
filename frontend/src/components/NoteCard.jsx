@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 import { PenSquareIcon , Trash2Icon } from 'lucide-react'
 import toast from 'react-hot-toast'
 
